@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie HUb</title>
+    <link rel="stylesheet" href="m.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="searchdiv"><input id="searchname" value="" type="search" placeholder="Search Movies by Name"><button onclick="displaymovie()" id="searchbutton">Search</button></div>
+    </div><!--end of navbar-->
+
+    <div id="buffer">
+        <div id="bfd"><i class="fa-solid fa-spinner"></i></div>
+    </div><!--end of buffer div-->
+
+    <div id="con">
+        <button class="btn" id="pre" onclick="Previous()"><i class="fa-solid fa-chevron-left"></i></button>
+        <div id="child">
+            <img id="img"  src="https://akamaividz2.zee5.com/image/upload/w_1013,h_405,c_scale,f_webp,q_auto:eco/resources/0-6-4z5297873/cover/1920x7704c196d432305459c867171d5793e95f5.jpg",
+            alt="">
+        </div>
+        <button class="btn" id="next" onclick="Next()"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <!---->
+    <p id="resultstatedisplay"></p>
+
+    <div id="container">
+       
+   </div><!--end of container-->
+</body>
+</html>
+<script src="j.js"></script>
